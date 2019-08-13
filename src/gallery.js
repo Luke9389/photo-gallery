@@ -9,4 +9,4 @@ export function renderCardItem(data) {
     `;
 
     return card;
-};
+}
