@@ -1,5 +1,3 @@
-
-
 export function renderCardItem(data) {
     const card = /*html*/ `
         <div class="card">
