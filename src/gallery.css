@@ -44,7 +44,7 @@ main {
     animation-name: move-gradient-on-card;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 17s;
+    animation-duration: 13s;
     border-radius: 20px;
 }
 @keyframes move-gradient-on-card {
