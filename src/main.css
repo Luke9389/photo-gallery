@@ -46,7 +46,7 @@ header {
     display: block;
     height: 130px;
     margin-left: -55px;
-    margin-top: -55%;
+    margin-top: -52%;
 }
 
 header h1 {
@@ -68,7 +68,7 @@ header h1 {
     font-size: 1.6em;
 }
 
-@media(max-width: 570px) {
+@media(max-width: 590px) {
     header {
         height: 18vh;
     }
@@ -79,16 +79,11 @@ header h1 {
     }
 }
 
-@media(max-width: 380px) {
+@media(max-width: 400px) {
     header {
         height: 20vh;
     }
     header h1 {
-        font-size: 1.5rem;
-    }
-    #nav-container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
+        font-size: 1.7rem;
     }
 }
