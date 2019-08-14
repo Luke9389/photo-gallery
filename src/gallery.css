@@ -10,77 +10,96 @@
 
 
 #gallery {
-    display: flex;
-    flex-flow: column wrap;
-    height: calc(82vh - 60px);
-    overflow-x: scroll;
+    column-count: 4;
+    column-gap: 3px;
+    max-width: 1400px;
+}
+@media only screen and (max-width: 1400px) and (min-width: 768px) {
+    #gallery {
+      column-count: 3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #gallery {
+      column-count: 2;
+    }
 }
 
 
 .card {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: " img img " " h2 p ";
-    margin: 0;
-    margin-top: 15px;
-    margin-left: 15px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 3px;
     position: relative;
-    height: 300px;
-    max-width: 200px;
-    border-radius: 12px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #5EBD3E, #FFB900, #F78200, #E23838, #973999, #009CDF, #5EBD3E);
+    background-size: 200%;
+    background-position: 30% 50%;
+    animation-name: move-gradient-on-card;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 17s;
+}
+@keyframes move-gradient-on-card {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
 }
 .card:nth-child(6n + 1) {
-    border: 5px solid #5EBD3E;
+    border: 10px solid #5EBD3E;
 }
 .card:nth-child(6n + 2) {
-    border: 5px solid #FFB900;
+    border: 10px solid #FFB900;
 }
 .card:nth-child(6n + 3) {
-    border: 5px solid #F78200;
+    border: 10px solid #F78200;
 }
 .card:nth-child(6n + 4) {
-    border: 5px solid #E23838;
+    border: 10px solid #E23838;
 }
 .card:nth-child(6n + 5) {
-    border: 5px solid #973999;
+    border: 10px solid #973999;
 }
 .card:nth-child(6n + 6) {
-    border: 5px solid #009CDF;
+    border: 10px solid #009CDF;
 }
 
 
 .gallery-image {
-    grid-area: img;
     margin: auto;
     margin-top: -1px;
-    max-height: 100%;
-    max-width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
-.card h2 {
-    grid-area: h2;
+.gallery-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1px;
+    margin-top: -2px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #bbb;
+    opacity: 0.7;
+}
+.gallery-text h2 {
     font-size: 1.2em;
-    margin-top: 10px;
-    text-align: center;
-}
-.card p {
-    grid-area: p;
-    margin-top: 10px;
-    text-align: center;
+    margin: 10px;
 }
 .badge {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -6px;
+    right: -6px;
     background-color: gold;
     border-radius: 50%;
     height: 2em;
     width: 2em;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
 }
