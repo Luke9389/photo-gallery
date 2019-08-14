@@ -9,9 +9,14 @@
 }
 
 
+main {
+    background-color: #333;
+}
+
+
 #gallery {
     column-count: 4;
-    column-gap: 3px;
+    column-gap: 13px;
     max-width: 1400px;
 }
 @media only screen and (max-width: 1400px) and (min-width: 768px) {
@@ -29,9 +34,8 @@
 .card {
     display: inline-block;
     width: 100%;
-    margin-top: 3px;
+    margin-top: 13px;
     position: relative;
-    border-radius: 20px;
     background-image: linear-gradient(to left, #5EBD3E, #FFB900, #F78200, #E23838, #973999, #009CDF, #5EBD3E);
     background-size: 200%;
     background-position: 30% 50%;
@@ -39,6 +43,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 17s;
+    border-radius: 20px;
 }
 @keyframes move-gradient-on-card {
     0% {
@@ -48,40 +53,18 @@
         background-position: 200% 50%;
     }
 }
-.card:nth-child(6n + 1) {
-    border: 10px solid #5EBD3E;
-}
-.card:nth-child(6n + 2) {
-    border: 10px solid #FFB900;
-}
-.card:nth-child(6n + 3) {
-    border: 10px solid #F78200;
-}
-.card:nth-child(6n + 4) {
-    border: 10px solid #E23838;
-}
-.card:nth-child(6n + 5) {
-    border: 10px solid #973999;
-}
-.card:nth-child(6n + 6) {
-    border: 10px solid #009CDF;
-}
 
 
 .gallery-image {
-    margin: auto;
-    margin-top: -1px;
     width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .gallery-text {
     display: flex;
     align-items: center;
-    margin-bottom: -1px;
-    margin-top: -2px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: #bbb;
     opacity: 0.7;
 }
