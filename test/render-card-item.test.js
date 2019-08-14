@@ -1,4 +1,4 @@
-import { renderCardItem } from "../src/gallery.js";
+import { renderCardItem } from '../src/gallery.js';
 
 const test = QUnit.test;
 
