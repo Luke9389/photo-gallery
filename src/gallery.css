@@ -14,6 +14,7 @@ main {
 }
 
 
+/* Ideas for masonry look in pure CSS from: https://w3bits.com/css-masonry/  */
 #gallery {
     column-count: 4;
     column-gap: 13px;
