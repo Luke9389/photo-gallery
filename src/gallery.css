@@ -34,6 +34,7 @@
     margin: auto;
     max-height: 100%;
     max-width: 100%;
+    border-radius: 6px;
 }
 .card h2 {
     grid-area: h2;
