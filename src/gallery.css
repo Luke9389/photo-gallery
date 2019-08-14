@@ -28,7 +28,10 @@
     position: relative;
     height: 300px;
     max-width: 200px;
+    border: 5px solid gold;
+    border-radius: 12px;
 }
+
 .gallery-image {
     grid-area: img;
     margin: auto;
