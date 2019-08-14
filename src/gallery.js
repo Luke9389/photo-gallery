@@ -3,7 +3,7 @@ export function renderCardItem(data) {
         <div class="card">
             <div class="badge">${data.horns}</div>
             <img class="gallery-image" src="${data.url}" alt="${data.title} image">
-            <div class="gallery-text">
+            <div class="gallery-text"> 
                 <h2>${data.title}</h2>
                 <p>${data.description}</p>
             </div>
