@@ -43,6 +43,7 @@
     grid-area: h2;
     font-size: 1.2em;
     margin-top: 10px;
+    text-align: center;
 }
 .card p {
     grid-area: p;
